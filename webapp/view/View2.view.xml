@@ -1,0 +1,77 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:form="sap.ui.layout.form" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="deloitte.usi.fn.controller.View2">
+	
+			<Page title="{/fields/title}" showNavButton="true" navButtonPress="onBack">
+			<content>
+				<Button text="Back" press="onBack"/>
+				<Table noDataText="Drop column list items here and columns in the area above" id="idTable" items="{/fruits}">
+				    <items>
+				        <ColumnListItem id="__item0">
+				        </ColumnListItem>
+				        <ColumnListItem id="__item1">
+				            <cells>
+				                <Text text="{name}" id="__text14"/>
+				                <Input value="{type}" id="__text15" showValueHelp="true" valueHelpRequest="onValueHelp"/>
+				                <Text text="{price}" id="__text16"/></cells>
+				        </ColumnListItem>
+				     </items>
+				    <columns>
+				        <Column id="__column0">
+				            <header>
+				                <Label text="Fruit" id="__label0"/>
+				            </header>
+				        </Column>
+				        <Column id="__column1">
+				            <header>
+				                <Label text="Type" id="__label1"/>
+				            </header>
+				        </Column>
+				        <Column id="__column2">
+				            <header>
+				                <Label text="Price" id="__label2"/>
+				            </header>
+				        </Column></columns>
+				    <headerToolbar>
+				        <Toolbar width="100%" id="__toolbar2">
+				            <content>
+				                <ToolbarSpacer id="__spacer1"/>
+				                <Button width="100px" id="__button3" icon="sap-icon://filter" press="onFilter"/>
+				            </content>
+				        </Toolbar>
+				    </headerToolbar></Table>	
+			<ObjectHeader intro="{name}"/>
+			</content>
+			<IconTabBar>
+				<items>
+					<IconTabFilter icon="sap-icon://add-equipment" text="Additional Info">
+					    <content>
+					        <!--<form:SimpleForm  editable="true" layout="ResponsiveGridLayout" id="__form0">-->
+					        <!--    <content>-->
+					        <!--        <core:Title id="__title0" text="Fruits "/>-->
+					        <!--        <Label text="Label 1" id="__label0"/>-->
+					        <!--        <Input width="100%" id="__input0" value="{name}"/>-->
+					        <!--        <Input width="100%" id="__input1" value="{price}"/>-->
+					        <!--        <Label text="Label 2" id="__label1"/></content>-->
+					        <!--</form:SimpleForm>-->
+					    </content>
+					</IconTabFilter>
+					<IconTabFilter icon="sap-icon://supplier" text="Supplier"/>
+					<IconTabFilter icon="sap-icon://activities" text="Extra">
+					    <content>
+					        <Select selectedItem="Element sap.ui.core.ListItem#__item2" selectedKey="item1" selectedItemId="__item2" id="__select0" items="{/fruits}">
+					            <items>
+					                <core:ListItem text="{name}" key="{name}"/>
+					                </items>
+					        </Select>
+					    </content>
+					</IconTabFilter>
+				</items>
+			</IconTabBar>
+           <footer>
+           	<Toolbar>
+           		<ToolbarSpacer/>
+           		<Button text="Save" type="Accept" press="onSave"/>
+           		<Button text="Cancel" type="Reject" press="onCancel"/>
+           	</Toolbar>
+           </footer>
+			</Page>
+	</mvc:View>

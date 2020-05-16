@@ -1,0 +1,15 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="deloitte.usi.fn.controller.myView"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<!--<App id="myApp">-->
+		<!--<pages>-->
+		<!--	<Page title="Title">-->
+		<!--		<content>-->
+		<!--			<Button text="Latest Button"></Button>-->
+		<!--		</content>-->
+		<!--	</Page>-->
+		<!--</pages>-->
+	<!--</App>-->
+	<SplitApp id="myApp">
+		
+	</SplitApp>
+</mvc:View>

@@ -1,0 +1,35 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="deloitte.usi.fn.controller.View1"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+<Page title="Screen1">
+		<headerContent>
+			<Button icon="sap-icon://action" press="onNext"></Button>	
+		</headerContent>
+	    <subHeader>
+            	<Toolbar>
+            		<SearchField id="idSearch"
+            		liveChange="onSearch"/>
+            	</Toolbar>
+            </subHeader>	
+            <!--<List id="idList" items="{/fruits}">-->
+			<List id="idList" mode="Delete" delete="onDelete" itemPress="onItemPress">
+            	<items >
+            		<!--<ObjectListItem title="{Name}" icon=" " intro="{type}" number="100" numberUnit="{type}">-->
+            		<!--	</ObjectListItem>-->
+            		<!--<DisplayListItem label="Apple" value="Biotic">-->
+            		<!--</DisplayListItem>-->
+            		<!--<StandardListItem title="banana" description="Power of potassium" icon=""></StandardListItem>-->
+            		<!--<ObjectListItem title="ObjectListItem" icon=" " intro="New" number="100" numberUnit="Ea">-->
+            		<!--	<firstStatus>-->
+            				
+            		<!--	</firstStatus>-->
+            		<!--</ObjectListItem>-->
+            		<!--<InputListItem label="Input List item">-->
+            		<!--	<content>-->
+            		<!--		<FlexBox></FlexBox>-->
+            		<!--	</content>-->
+            			
+            		<!--</InputListItem>-->
+            	</items>
+            </List>
+</Page>
+</mvc:View>

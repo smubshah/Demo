@@ -1,0 +1,11 @@
+{
+	
+		"fruits" : [
+	             { "name" : "Apple", "type" : "Citrus", "price" : "121" },
+	             { "name" : "Banana", "type" : "Potassium", "price" : "10"  },
+	             { "name" : "Cherry", "type" : "Minerals", "price" : "100"  }
+			]
+		
+	
+	
+}
